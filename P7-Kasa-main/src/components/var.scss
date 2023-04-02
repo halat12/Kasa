@@ -1,0 +1,21 @@
+$primary-color: #ff6060;
+$secondary-color: #f7f7f7;
+$tertiary-color: #ffffff;
+
+$footer-color: #000000;
+$background-color: rgba(0, 0, 0, 0.3);
+$linear-cards: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
+
+$about-background: $background-color url(../../images/Apropos_Header.png);
+$about-background-mobile: $background-color
+  url(../../images/Apropos_Header_mobile.png);
+$banner-background: $background-color url(../../images/Accueil_Header.png);
+
+$breakpoint-desktop: 769px;
+
+$min: 375px;
+$max: 768px;

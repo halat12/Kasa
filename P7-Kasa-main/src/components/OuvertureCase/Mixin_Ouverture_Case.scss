@@ -1,0 +1,111 @@
+.collapse {
+  width: 100%;
+  margin: 20px 0;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin: 31px auto 0;
+  }
+
+  &__visible {
+    background: $primary-color;
+    color: $tertiary-color;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      height: 47px;
+    }
+
+    h2 {
+      font-size: (13px);
+      font-style: normal;
+      font-weight: 500px;
+      line-height: 142.6%;
+
+      @media screen and (min-width: $breakpoint-desktop) {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500px;
+        line-height: 142.6%;
+      }
+    }
+  }
+
+  &__toggle {
+    opacity: 0;
+    color: $primary-color;
+    background: $secondary-color;
+    border-radius: 5px;
+    transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+
+    p {
+      margin: 0;
+      padding: 22px 15px;
+      pointer-events: none;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400px;
+      line-height: 142.6%;
+
+      @media screen and (min-width: $breakpoint-desktop) {
+        font-size: (24px);
+        font-style: normal;
+        font-weight: 400px;
+        line-height: 142.6%;
+      }
+    }
+  }
+}
+
+.animated {
+  opacity: 1;
+  transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
+}
+
+.chevron {
+  width: 9px;
+  transform: rotate(0deg);
+  transition: 0.4s 0.4s ease-in-out;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 15px;
+  }
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: 0.4s ease-in-out;
+}
+
+.about-style {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 87.5%;
+  }
+}
+
+.collapse-fiche-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    gap: 6%;
+  }
+}
+
+.equipList {
+  list-style-type: none;
+}

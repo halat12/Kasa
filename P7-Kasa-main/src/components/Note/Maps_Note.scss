@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "src/components/var.scss";
+
+@import "src/components/ImageArticle/Mixin_Slide_Images_Article.scss";
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: $max;
+  min-width: $min;
+  margin: auto;
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 100%;
+  }
+}
+
+main {
+  margin: 5%;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin: 0 100px;
+  }
+}
+
+.redFont {
+  color: $primary-color;
+}
+
+.fiche-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bl-msk {
+  background: $background-color;
+  mix-blend-mode: darken;
+  border-radius: 25px;
+}
+
+.wh-msk {
+  background: $secondary-color;
+  border-radius: 10px;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    border-radius: 25px;
+  }
+}

@@ -1,0 +1,73 @@
+.errorContainer {
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 22px 6%;
+}
+
+.errorNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700px;
+  line-height: 142.6%;
+  margin: 12rem 0 1rem 0;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 142.6%;
+    margin: 0;
+  }
+}
+
+%flex-error {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.errorText {
+  @extend %flex-error;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500px;
+  line-height: 142.6%;
+  margin: 0 11%;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: 142.6%;
+    margin: 0;
+  }
+}
+
+.errorLinkHome {
+  @extend %flex-error;
+  text-decoration: none;
+  color: $primary-color;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500px;
+  line-height: 142.6%;
+  margin-top: 9rem;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: 142.6%;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+  }
+}
